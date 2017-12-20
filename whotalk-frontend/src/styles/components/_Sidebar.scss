@@ -1,0 +1,109 @@
+div.sidebar {
+    // just a '.sidebar' will also be applied to the sidebar
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 100%;
+    background-color: #e9ecef;
+    //transform: translateX(-300px);
+    transition: all .25s ease;
+    overflow-x: hidden;
+    z-index: 100;
+    opacity: 0;
+    overflow: hidden;
+
+    &.open {
+        //transform: translateX(0px);
+        opacity: 1;
+        width: 280px;
+    }
+    .sidebar-top {
+        background-color: #495057;
+        padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 280px;
+        .button-container {
+            text-align: right;
+            .circular-button {
+                display: inline-block;
+            }
+            .circular-button+.circular-button {
+                margin-left: 5px;
+            }
+        }
+
+        .profile {
+            .circle {
+                border-radius: 50%;
+                width: 150px;
+                height: 150px;
+                background-color: #F8F8F8;
+                margin-top: 20px;
+                margin-left: 50%;
+                transform: translateX(-50%);
+                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+                .image {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+            }
+
+            .info {
+                margin-top: 8px;
+                text-align: center;
+                .username {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #f8f9fa;
+                    padding-bottom: 2px;
+                    &:hover {
+                       color: #faa2c1;
+                    }
+                }
+                .name {
+                    padding-top: 2px;
+                    font-size: 15px;
+                    color: #ced4da;
+                }
+            }
+        }
+    }
+
+    .sidebar-bottom {
+        width: 280px;
+        .followship {
+            .grid { margin: 0 }
+            background-color: white;
+            text-align: center;
+            border-bottom: 1px solid #ced4da;
+            border-top: 1px solid #343a40;
+            .column + .column {
+                border-left: 1px solid #e9ecef;
+            }
+            .title {
+                color: #343a40;
+                font-size: 17px;
+                font-weight: 800;
+            }
+            .value {
+                padding-top: 14px;
+                color: #868e96;
+                font-size: 30px;
+                font-weight: 600;
+                padding-bottom: 3px;
+            }
+        }
+
+        .login-button {
+            text-align: center;
+            .button {
+                margin-top: 20px;
+                width: 240px;
+            }
+        }
+    }
+
+}

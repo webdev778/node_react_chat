@@ -1,0 +1,128 @@
+.box {
+    box-shadow: 0px -15px 15px -15px rgba(0, 0, 0, .85);
+    -webkit-box-shadow: 0px -15px 15px -15px rgba(0, 0, 0, .85);
+    -moz-box-shadow: 0px -15px 15px -15px rgba(0, 0, 0, .85);
+    margin-top: 230px;
+    //height: 70vh;
+    position: relative;
+    background-color: #212529;
+    min-height: 330px;
+    > .circle {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        background-color: #F8F8F8;
+        margin-left: 50%;
+        margin-bottom: -120px;
+        transform: translate(-50%, -80%);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+        .image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        @include media("<tablet") {
+            width: 100px;
+            height: 100px;
+            margin-bottom: -80px;
+            .image {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .profile {
+        margin-top: 10px;
+        text-align: center;
+        .username {
+            font-size: 32px;
+            font-weight: 600;
+            color: white;
+        }
+        .name {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #dee2e6;
+        }
+        @include media("<tablet") {
+            margin-top: 15px;
+            .username {
+                font-size: 24px;
+            }
+            .name {
+                margin-top: 10px;
+                font-size: 16px;
+            }
+        }
+    }
+    .info {
+        text-align: center;
+        margin: 0px;
+        width: 100%;
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+
+        .column {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        .column:nth-child(2) {
+            border-left: 1px solid #495057;
+            border-right: 1px solid #495057;
+        }
+        .title {
+            color: #f8f9fa;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        .value {
+            color: #adb5bd;
+            margin-top: 20px;
+            font-weight: 200;
+            font-size: 48px;
+            cursor: pointer;
+        }
+        @include media("<tablet") {
+            .title {
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 0px;
+            }
+            .value {
+                margin-top: 15px;
+                font-size: 28px;
+            }
+        }
+    }
+    .buttons {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+
+
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 15px;
+        .column {
+            .button {
+                width: 100%;
+                font-size: 22px;
+            }
+        }
+        @include media("<tablet") {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            &.ui.stackable.grid>.wide.column {
+                padding: 5px !important;
+            }
+            .column {
+                .button {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

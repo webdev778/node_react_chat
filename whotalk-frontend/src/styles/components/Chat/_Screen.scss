@@ -1,0 +1,18 @@
+.screen {
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f3f5;
+    padding-top: 50px;
+
+    // .scrollbox > div {
+    //     overflow: auto !important;
+    // }
+    
+    @import 'Input';
+    @import 'Start';
+    @import 'Select';
+    @import 'MessageList';
+    @import 'OnlineListButton';
+    @import 'OnlineList';
+    @import 'StatusMessage';
+}

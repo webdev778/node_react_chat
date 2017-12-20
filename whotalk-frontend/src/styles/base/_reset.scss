@@ -1,0 +1,29 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #F7F7F7;
+    font-family: 'Open Sans', 'Noto Sans KR';
+}
+
+h1,
+h2 {
+    font-weight: 400;
+}
+
+b {
+    font-weight: 600;
+}
+
+h1,
+h2,
+p {
+    font-family: 'Open Sans', 'Noto Sans KR';
+}
+
+a {
+    cursor: pointer;
+}
+
+* {
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
